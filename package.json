@@ -1,0 +1,30 @@
+{
+  "name": "@rideglory/contracts",
+  "version": "0.1.0",
+  "description": "Shared DTOs, enums, and message contracts for Rideglory services",
+  "author": "",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@nestjs/mapped-types": ">=2.0.0",
+    "class-transformer": ">=0.5.0",
+    "class-validator": ">=0.14.0"
+  },
+  "devDependencies": {
+    "@nestjs/mapped-types": "*",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "typescript": "^5.7.3"
+  }
+}

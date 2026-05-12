@@ -16,10 +16,7 @@ export class RiderTrackingDto {
   userId!: string;
 
   @IsString()
-  firstName!: string;
-
-  @IsString()
-  lastName!: string;
+  fullName!: string;
 
   @IsIn(['lead', 'rider'])
   role!: RiderTrackingRoleValue;

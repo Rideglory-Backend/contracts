@@ -52,4 +52,20 @@ export class CreateVehicleDto {
   @IsOptional()
   @IsBoolean()
   isArchived?: boolean;
+
+  @IsOptional()
+  @IsString()
+  engine?: string;
+
+  @IsOptional()
+  @IsString()
+  horsepower?: string;
+
+  @IsOptional()
+  @IsString()
+  torque?: string;
+
+  @IsOptional()
+  @IsString()
+  weight?: string;
 }

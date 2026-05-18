@@ -11,6 +11,11 @@ export enum MaintenanceType {
 
 export enum MaintenanceSortBy {
   DATE = 'date',
-  NAME = 'name',
+  TYPE = 'type',
   NEXT_MAINTENANCE = 'nextMaintenance',
+}
+
+export enum MaintenanceMode {
+  COMPLETED = 'COMPLETED',
+  SCHEDULED = 'SCHEDULED',
 }

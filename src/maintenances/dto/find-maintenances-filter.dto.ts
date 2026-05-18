@@ -1,6 +1,6 @@
 import { Transform } from 'class-transformer';
 import { IsArray, IsBoolean, IsEnum, IsISO8601, IsOptional } from 'class-validator';
-import { MaintenanceSortBy, MaintenanceType } from '../enums';
+import { MaintenanceMode, MaintenanceSortBy, MaintenanceType } from '../enums';
 
 export class FindMaintenancesFilterDto {
   @IsOptional()
@@ -27,4 +27,8 @@ export class FindMaintenancesFilterDto {
   @IsOptional()
   @IsEnum(MaintenanceSortBy)
   sortBy?: MaintenanceSortBy;
+
+  @IsOptional()
+  @IsEnum(MaintenanceMode)
+  mode?: MaintenanceMode;
 }

@@ -15,3 +15,4 @@ export * from './registration-id-payload.dto';
 export * from './event-registrations-query.dto';
 export * from './event-registration.dto';
 export * from './vehicle-summary.dto';
+export * from './event-filter.dto';

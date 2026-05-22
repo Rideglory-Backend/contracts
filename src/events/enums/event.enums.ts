@@ -16,6 +16,7 @@ export enum EventDifficulty {
 }
 
 export enum EventState {
+  DRAFT = 'DRAFT',
   SCHEDULED = 'SCHEDULED',
   IN_PROGRESS = 'IN_PROGRESS',
   CANCELLED = 'CANCELLED',

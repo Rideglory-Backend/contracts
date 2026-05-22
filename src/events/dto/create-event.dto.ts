@@ -55,13 +55,26 @@ export class CreateEventDto {
   allowedBrands!: string[];
 
   @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  waypoints?: string[];
+
+  @IsOptional()
   @IsNumber()
   @IsPositive()
   price?: number;
 
   @IsOptional()
+  @IsNumber()
+  @IsPositive()
+  maxParticipants?: number;
+
+  @IsOptional()
   @IsString()
   imageUrl?: string;
+
+  @IsOptional()
+  routeGeoJson?: Record<string, unknown>;
 
   @IsOptional()
   @IsEnum(EventState)

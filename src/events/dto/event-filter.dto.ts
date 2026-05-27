@@ -20,7 +20,12 @@ export class EventFilterDto {
 }
 
 /** Payload forwarded from api-gateway → events-ms via TCP MessagePattern */
-export class FindAllEventsPayloadDto extends EventFilterDto {}
+export class FindAllEventsPayloadDto extends EventFilterDto {
+  /** Firebase UID del usuario autenticado, usado para filtrar eventos IN_PROGRESS */
+  @IsOptional()
+  @IsString()
+  authUserId?: string;
+}
 
 /** Payload forwarded for upcoming events */
 export class FindUpcomingEventsPayloadDto extends EventFilterDto {

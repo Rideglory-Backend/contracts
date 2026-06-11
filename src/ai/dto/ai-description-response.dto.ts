@@ -2,4 +2,5 @@
 export class AiDescriptionResponseDto {
   markdown!: string;
   remainingGenerations!: number;
+  isDescription!: boolean;
 }

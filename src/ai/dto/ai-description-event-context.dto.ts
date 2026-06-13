@@ -8,9 +8,6 @@ export class AiDescriptionEventContext {
   @IsEnum(EventType)
   eventType!: EventType;
 
-  @IsString()
-  city!: string;
-
   @IsOptional()
   @IsString()
   difficulty?: string;

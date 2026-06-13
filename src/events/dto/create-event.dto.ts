@@ -22,9 +22,6 @@ export class CreateEventDto {
   @IsString()
   description!: string;
 
-  @IsString()
-  city!: string;
-
   @Type(() => Date)
   @IsDate()
   startDate!: Date;

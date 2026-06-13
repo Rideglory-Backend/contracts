@@ -14,9 +14,6 @@ export class EventFilterDto {
   @IsISO8601()
   dateTo?: string;
 
-  @IsOptional()
-  @IsString()
-  city?: string;
 }
 
 /** Payload forwarded from api-gateway → events-ms via TCP MessagePattern */

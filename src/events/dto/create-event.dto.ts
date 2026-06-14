@@ -34,12 +34,6 @@ export class CreateEventDto {
   @IsEnum(EventDifficulty)
   difficulty!: EventDifficulty;
 
-  @IsString()
-  meetingPoint!: string;
-
-  @IsString()
-  destination!: string;
-
   @Type(() => Date)
   @IsDate()
   meetingTime!: Date;

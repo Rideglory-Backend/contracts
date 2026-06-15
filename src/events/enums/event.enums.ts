@@ -1,10 +1,10 @@
 export enum EventType {
-  TOURISM = 'TOURISM',
-  URBAN = 'URBAN',
+  ON_ROAD = 'ON_ROAD',
   OFF_ROAD = 'OFF_ROAD',
+  COURSE = 'COURSE',
+  TRACK_DAY = 'TRACK_DAY',
+  LEISURE = 'LEISURE',
   COMPETITION = 'COMPETITION',
-  SOLIDARITY = 'SOLIDARITY',
-  SHORT_DISTANCE = 'SHORT_DISTANCE',
 }
 
 export enum EventDifficulty {

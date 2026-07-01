@@ -26,6 +26,11 @@ export class EventRegistrationDto {
   vehicleId!: string | null;
   vehicleSummary?: VehicleSummaryDto | null;
 
+  shareMedicalInfo!: boolean;
+  allowOrganizerContact!: boolean;
+  riskAcceptedAt!: Date | null;
+  riskAcceptanceVersion!: string | null;
+
   createdAt!: Date;
   updatedAt!: Date;
 }

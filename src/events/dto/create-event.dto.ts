@@ -70,4 +70,9 @@ export class CreateEventDto {
   @IsOptional()
   @IsEnum(EventState)
   state: EventState = EventState.SCHEDULED;
+
+  @IsOptional()
+  @Type(() => Date)
+  @IsDate()
+  organizerAcceptedResponsibilityAt?: Date;
 }

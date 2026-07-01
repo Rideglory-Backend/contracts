@@ -63,4 +63,21 @@ export class CreateRegistrationDto {
   @IsOptional()
   @IsBoolean()
   saveToProfile?: boolean;
+
+  @IsOptional()
+  @IsBoolean()
+  shareMedicalInfo?: boolean;
+
+  @IsOptional()
+  @IsBoolean()
+  allowOrganizerContact?: boolean;
+
+  @IsOptional()
+  @Type(() => Date)
+  @IsDate()
+  riskAcceptedAt?: Date;
+
+  @IsOptional()
+  @IsString()
+  riskAcceptanceVersion?: string;
 }

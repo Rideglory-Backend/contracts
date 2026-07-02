@@ -28,4 +28,9 @@ export class FindAllEventsPayloadDto extends EventFilterDto {
 export class FindUpcomingEventsPayloadDto extends EventFilterDto {
   @IsOptional()
   limit?: number;
+
+  /** Firebase UID del usuario autenticado; permite priorizar eventos IN_PROGRESS en los que participa */
+  @IsOptional()
+  @IsString()
+  authUserId?: string;
 }

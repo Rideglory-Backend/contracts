@@ -9,5 +9,3 @@ export class MedicalConsentDto {
 export class MedicalConsentResponseDto {
   medicalConsentAcceptedAt!: Date;
 }
-
-export const NOT_SHARED_SENTINEL = '__NOT_SHARED__' as const;
